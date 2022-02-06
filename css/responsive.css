@@ -1,0 +1,441 @@
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .container {
+    max-width: 1640px;
+  }
+}
+
+@media screen and (max-width: 1799px) {
+  /* HERO */
+  .hero-img img {
+    height: inherit;
+  }
+  /* HERO END */
+}
+
+@media screen and (max-width: 1599px) {
+  /* HERO */
+  .main-hero {
+    height: auto;
+  }
+
+  .hero-img img {
+    top: 0;
+  }
+
+  .hero-text {
+    padding: 8rem 0;
+  }
+  /* HERO END */
+}
+
+@media screen and (max-width: 1439px) {
+  html {
+    font-size: 8px;
+  }
+
+  /* HEADER */
+  .main-header {
+    height: 80px;
+  }
+
+  .navbar-nav .nav-item:not(:first-child) {
+    margin-left: 3.5rem;
+  }
+  /* HEADER END */
+
+  /* HERO */
+  .main-hero {
+    padding-top: 80px;
+  }
+  /* HERO END */
+
+  /* MEMBERSHIP */
+  .plan .plan-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  /* MEMBERSHIP END */
+
+  /* AMA */
+  .brands-slider .slider-item {
+    height: 200px;
+  }
+
+  .slider-item-inner img {
+    width: 50%;
+  }
+  /* AMA END */
+}
+
+@media screen and (max-width: 1399px) {
+}
+
+@media screen and (max-width: 1365px) {
+  /* MAIN HERO */
+  .hero-img {
+    height: auto;
+  }
+
+  .hero-img img {
+    position: static;
+  }
+  /* MAIN HERO END */
+}
+
+@media screen and (max-width: 1199px) {
+  html {
+    font-size: 7px;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: initial;
+    width: auto;
+    height: auto;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: initial;
+    border-radius: unset;
+  }
+
+  p,
+  li,
+  a,
+  p.small,
+  li.small,
+  a.small {
+    font-size: 16px;
+  }
+  /* HEADER */
+  .main-header .navbar-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nav-background);
+    transform: translateX(-100%);
+    transition: var(--default-transition);
+  }
+
+  .main-header .navbar {
+    flex-wrap: nowrap;
+  }
+
+  .show-menu .main-header .navbar-nav {
+    transform: translateX(0);
+  }
+
+  .show-menu {
+    overflow: hidden;
+  }
+
+  .navbar-nav .nav-item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 20px;
+  }
+
+  .main-header .navbar-brand,
+  .main-header .navbar-toggler,
+  .main-header .theme-toggle {
+    position: relative;
+    z-index: 101;
+  }
+  /* HEADER END */
+
+  /* MAIN HERO */
+  .hero-text {
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .hero-img img {
+    height: auto;
+  }
+  /* MAIN HERO END */
+
+  /* ABOUT US */
+
+  .about-us-text {
+    margin-bottom: 14rem;
+  }
+
+  .about-us-text h2 {
+    margin-bottom: 5rem;
+  }
+  /* ABOUT US END */
+
+  /* MEMBERSHIP */
+  .ama-wrap {
+    padding: 7rem 0;
+  }
+
+  .membership .section-title {
+    max-width: 100%;
+  }
+
+  .with-tickmarks > li {
+    padding-left: 35px;
+    margin-bottom: 24px;
+    line-height: 1.4;
+  }
+
+  .with-tickmarks > li::before {
+    width: 20px;
+    height: 20px;
+    top: 0;
+  }
+  /* MEMBERSHIP END */
+
+  /* AMA */
+  .ama {
+    padding-bottom: 10rem;
+  }
+  /* AMA END */
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 6px;
+  }
+
+  .btn {
+    width: auto;
+    padding: 15px 25px;
+  }
+
+  .btn-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2.large {
+    font-size: 9rem;
+  }
+
+  /* ABOUT US */
+  .about-us-text {
+    margin-bottom: 10rem;
+  }
+
+  .about-us-text p:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  /* ABOUT US END */
+
+  /* TRADING SIGNAL */
+  .signals-inner .signal-img {
+    position: static;
+    transform: none;
+    max-width: 60%;
+    margin-right: auto;
+  }
+  /* TRADING SIGNAL END */
+
+  /* MEMBERSHIP */
+  .plan-sub-benefits li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .plan-sub-benefits li {
+    line-height: 1.2;
+  }
+  /* MEMBERSHIP END */
+
+  /* AMA */
+  .ama .section-title,
+  .ama .ama-desc {
+    max-width: 100%;
+  }
+  /* AMA END */
+
+  /* REQUEST FORM */
+  .form-submit .btn {
+    width: 100%;
+  }
+  /* REQUEST FORM END */
+
+  /* FOOTER */
+  .footer-social {
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+    margin: 6rem 0;
+  }
+  /* FOOTER END */
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .form-input {
+    font-size: 16px;
+  }
+
+  h2.large {
+    font-size: 8rem;
+  }
+  /* HEADER */
+  .main-header,
+  .main-header.scrolled {
+    height: 60px;
+  }
+
+  .main-hero {
+    padding-top: 60px;
+  }
+
+  .navbar-brand {
+    margin-right: 5px;
+  }
+
+  .navbar-brand .brand-name {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .navbar-brand .brand-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-brand .brand-icon i {
+    width: 100%;
+    height: inherit;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* HEADER END */
+
+  /* SERVICES */
+  .services .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card .service-card-title {
+    font-size: 24px;
+  }
+  /* SERVICES END */
+
+  /* MEMBERSHIP */
+  .with-tickmarks > li {
+    margin-bottom: 18px;
+  }
+
+  .plan-benefits .plan-sub-benefits {
+    margin-top: 10px;
+  }
+  /* MEMBERSHIP END */
+
+  /* AMA */
+  .brands-slider .slider-item {
+    height: 150px;
+  }
+  /* AMA END */
+
+  /* REQUEST FORM */
+  .request-form textarea.form-input {
+    height: 120px;
+  }
+  /* REQUEST FORM END */
+}
+
+@media screen and (max-width: 575px) {
+  h2.large {
+    font-size: 7rem;
+  }
+
+  /* TRADE SIGNAL */
+  .signals-inner .signal-img {
+    max-width: 100%;
+  }
+  /* TRADE SIGNAL END */
+
+  /* AMA */
+  .brands-slider .slider-item {
+    height: 120px;
+  }
+
+  .brands-slider .slider-item-inner {
+    border-radius: 10px;
+  }
+  /* AMA END */
+
+  /* FOOTER */
+  .footer-top {
+    padding-top: 16rem;
+    padding-bottom: 12rem;
+  }
+
+  .footer-social {
+    margin: 8rem 0;
+  }
+  /* FOOTER END */
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  /* AMA */
+  .brands-slider .slider-item {
+    height: 80px;
+  }
+  /* AMA END */
+}
+
+@media screen and (max-width: 349px) {
+}
