@@ -1,5 +1,4 @@
-// IMPPORT TINYSLIDER
-
+// IMPORT TINYSLIDER
 (function () {
   const data = {
     sitelogo: `
@@ -582,6 +581,9 @@
     <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
   </svg>
     `,
+    hamOpen: `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+    `,
   };
   const allIconTags = document.querySelectorAll("[data-icon]");
   allIconTags.forEach((icon) => {
@@ -600,12 +602,6 @@
     }
   });
 })();
-
-let root = document.querySelector("html");
-let themeToggle = document.querySelector("#themeToggle");
-themeToggle.addEventListener("click", () => {
-  root.classList.toggle("dark-theme");
-});
 
 var slider = tns({
   container: "#brandsSlider",
@@ -643,9 +639,32 @@ navToggler.addEventListener("click", () => {
   document.body.classList.toggle("show-menu");
 });
 
-// let themePreference = window.matchMedia("(prefers-color-scheme: dark)");
-// if (themePreference.matches) {
+// DARK MODE SETUP
+const themeToggler = document.querySelector("#theme-toggle");
+const root = document.querySelector("html");
+let storedTheme = localStorage.getItem("theme");
+
+themeToggler.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+});
+
+// if (storedTheme === "dark") {
 //   root.classList.add("dark-theme");
 // } else {
 //   root.classList.remove("dark-theme");
 // }
+
+// if (root.classList.contains("dark-theme")) {
+//   localStorage.setItem("theme", "dark");
+// } else {
+//   localStorage.setItem("theme", "light");
+// }
+
+// themeToggler.addEventListener("click", () => {
+//   if (storedTheme === "dark") {
+//     localStorage.setItem("theme", "light");
+//   } else if (storedTheme === "light") {
+//     localStorage.setItem("theme", "dark");
+//   }
+//   root.classList.toggle("dark-theme");
+// });

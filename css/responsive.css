@@ -53,7 +53,8 @@
     height: 80px;
   }
 
-  .navbar-nav .nav-item:not(:first-child) {
+  .navbar-nav .nav-item:not(:first-child),
+  .theme-toggle {
     margin-left: 3.5rem;
   }
   /* HEADER END */
@@ -102,17 +103,6 @@
     font-size: 7px;
   }
 
-  ::-webkit-scrollbar {
-    background-color: initial;
-    width: auto;
-    height: auto;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: initial;
-    border-radius: unset;
-  }
-
   p,
   li,
   a,
@@ -150,6 +140,11 @@
 
   .navbar-nav .nav-item:not(:first-child) {
     margin-left: 0;
+  }
+
+  .theme-toggle {
+    margin-left: 0;
+    margin-right: 10px;
   }
 
   .navbar-nav .nav-item {
@@ -349,6 +344,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
   }
   /* HEADER END */
 
